@@ -17,5 +17,3 @@ class Interpolator():
         x_odd = x[0:-1:2]
         x_even = x[1::2]
         return h/3 * (f(a) + f(b) + 4*np.sum(f(x_odd)) + 2*np.sum(f(x_even)))
-
-
